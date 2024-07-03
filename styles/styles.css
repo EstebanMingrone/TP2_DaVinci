@@ -1,0 +1,336 @@
+/*Reseteo y Ajustes Generales*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+h2, h3{
+    font-family: 'Oswald';
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    font-family: 'Oswald';
+}
+
+@keyframes reveal{
+    from{
+        opacity: 0;
+        clip-path: inset(45% 20% 45% 20%);
+    }
+    to{
+        opacity: 1;
+        clip-path: inset(0% 0% 0% 0%);
+    }
+}
+
+/*Header y Nav*/
+
+header{
+    background: linear-gradient(145deg, rgba(0,85,143,1) 29%, rgba(0,115,159,1) 80%);
+    padding: 10px ;
+    width: 1200px; 
+    font-size: 24px;
+}
+
+#logo{
+    width: 200px;
+    height: 108px;
+    background: url('../assets/img/antcom-logo.png');
+    font-size: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+nav{
+    width: 920px;
+    display: inline-block;
+    text-align: right;
+    vertical-align: middle;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none; 
+    width: 160px;
+    display: inline-block;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+nav ul li a:hover{
+    color: #00739f;
+    background-color: white;
+    border-radius: 8px;
+}
+
+/*Main Index*/
+video{
+    box-shadow: -1px 7px 49px 0px rgba(0,67,101,0.51);
+    width: 100%;
+    margin: 0;
+    display: block;
+}
+
+.indexSection{
+    background-color: #f0f0f0;
+    margin-top: 0px;
+    padding: 0px 20px;
+}
+
+.indexSection h2{
+    font-size: 36px;
+    color: #00558f;
+    text-align: center;
+    margin-bottom: 20px;
+    view-timeline-name: --revealing-image;
+    view-timeline-axis: block;
+    animation: linear reveal both;
+    animation-timeline: --revealing-image;
+    animation-range: entry 25% cover 25%;
+}
+
+.articleContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: start;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    padding: 20px;
+    color: #333;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+article img{
+    view-timeline-name: --revealing-image;
+    view-timeline-axis: block;
+    animation: linear reveal both;
+    animation-timeline: --revealing-image;
+    animation-range: entry 25% cover 25%;
+}
+
+article h3{
+    font-size: 24px;
+    color: #00558f;
+    margin: 10px;
+    view-timeline-name: --revealing-image;
+    view-timeline-axis: block;
+    animation: linear reveal both;
+    animation-timeline: --revealing-image;
+    animation-range: entry 25% cover 25%;
+}
+
+article p{
+    font-size: 16px;
+    line-height: 1.6;
+    view-timeline-name: --revealing-image;
+    view-timeline-axis: block;
+    animation: linear reveal both;
+    animation-timeline: --revealing-image;
+    animation-range: entry 25% cover 25%;
+}
+
+aside{
+    width: 100%;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+aside img{
+    width: 100%;
+    max-width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    view-timeline-name: --revealing-image;
+    view-timeline-axis: block;
+    animation: linear reveal both;
+    animation-timeline: --revealing-image;
+    animation-range: entry 25% cover 25%;
+}
+
+aside img:hover{
+    transform: scale(1.125,1.125);
+}
+
+/*Footer*/
+footer{
+    background: linear-gradient(145deg, rgba(0,85,143,1) 29%, rgba(0,115,159,1) 80%);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 1200px;
+}
+
+.logoFooter{
+    width: 400px;
+    color: #f0f0f0;
+    padding: 20px;
+}
+
+.navFooter{
+    width: 400px;
+    display: flex;
+}
+
+.socialMedia{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    width: 400px;
+    gap: 20px;
+}
+
+.socialMedia a :hover{
+    fill: #00558f;
+}
+
+.navFooter ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Página Servicios*/
+.mainServices{
+    background: linear-gradient(145deg, rgba(0,85,143,1) 29%, rgba(0,115,159,1) 80%);
+}
+
+.serviceSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 10px;
+}
+
+.serviceSection div{
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 18px;
+    color: aliceblue;
+}
+
+.serviceSection h2{
+    font-size: 48px;
+    margin-bottom: 15px;
+    
+}
+
+.serviceSection img{
+    border-radius: 20px;
+    width: 50%;
+    max-width: 580px;
+    box-shadow: -1px 7px 49px 0px rgba(0,67,101,0.51);
+}
+
+.planService{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.planService h2{
+    font-size: 48px;
+    color: #00558f;
+    margin-bottom: 10px;
+    view-timeline-name: --revealing-image;
+    view-timeline-axis: block;
+    animation: linear reveal both;
+    animation-timeline: --revealing-image;
+    animation-range: entry 25% cover 25%;
+}
+
+.serviceContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+    
+}
+
+.serviceCol {
+    background: linear-gradient(145deg, rgba(0,85,143,1) 29%, rgba(0,115,159,1) 80%);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+    text-align: center;
+    view-timeline-name: --revealing-image;
+    view-timeline-axis: block;
+    animation: linear reveal both;
+    animation-timeline: --revealing-image;
+    animation-range: entry 25% cover 25%;
+}
+
+.serviceCol img{
+    width: 200px;
+    border: solid aliceblue;
+    border-radius: 50%;
+    box-shadow: -1px 7px 49px 0px rgba(0,67,101,0.51);
+}
+
+.serviceCol h3 {
+    color: aliceblue;
+    font-size: 24px;
+    margin: 10px 0px;
+}
+.serviceCol ul {
+    color: aliceblue;
+    font-size: 18px;
+    text-align: start;
+    padding: 10px;
+}
+
+button{
+    margin-top: 10px;
+    padding: 16px 32px;
+    border-radius: 12px;
+    border: none;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: #00558f;
+    color: aliceblue;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+
+
+
+
